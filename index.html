@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Coder</title>
+  </head>
+  <body>
+    <h1>QR Coder</h1>
+    <span class="inputgrp">
+      <label for="url">Enter a URL</label>
+      <input type="text" name="url" />
+    </span>
+    <span class="selectgrp">
+      <label for="url">Select a size</label>
+      <select name="size">
+        <option value="100">100x100</option>
+        <option value="200">200x200</option>
+        <option value="300">300x300</option>
+        <option value="400">400x400</option>
+        <option value="500">500x500</option>
+        <option value="600">600x600</option>
+      </select>
+    </span>
+    <button id="generate" type="button">Generate</button>
+    <span class="btngrp">
+      <button type="button" id="copy">Copy</button>
+      <button type="button" id="save">Download</button>
+    </span>
+
+    <div id="code"></div>
+
+    <the-loader class="hidden"></the-loader>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
