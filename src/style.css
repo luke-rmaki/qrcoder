@@ -14,10 +14,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-around; */
   width: 100vw;
   min-height: 100vh;
-  background-color: var(--purple);
+  background-color: var(--haze);
   box-sizing: border-box;
 }
 
@@ -31,7 +30,7 @@ h1 {
   font-family: var(--font);
   color: white;
   font-weight: normal;
-  margin-block-end: 15vh;
+  margin-block-end: 2rem;
 }
 
 span {
@@ -44,16 +43,15 @@ span {
 
 .inputgrp {
   margin-block-end: 5rem;
-}
-
-.selectgrp {
-  margin-block-end: 3rem;
+  width: 50vw;
+  max-width: 500px;
 }
 
 label {
   font-family: var(--font);
   color: var(--haze);
   margin-block-end: 1rem;
+  margin-block-start: 2rem;
 }
 
 input,
@@ -71,13 +69,13 @@ input {
 }
 
 select {
-  background-color: var(--ebony);
+  background-color: var(--purple);
   color: white;
 }
 
 button {
   border-radius: 20px;
-  background-color: var(--haze);
+  background-color: var(--violet);
   padding: 1.5rem 2rem;
   font-size: 1.5rem;
   font-family: var(--font);
@@ -86,7 +84,7 @@ button {
 }
 
 button:hover {
-  background-color: var(--violet);
+  background-color: var(--purple);
   color: white;
 }
 
@@ -98,14 +96,14 @@ button:hover {
 .btngrp button {
   font-size: 1rem;
   padding: 0.8rem 1rem;
-  background-color: var(--ebony);
-  color: var(--haze);
+  background-color: var(--haze);
+  color: var(--ebony);
 }
 
 .btngrp button:hover,
 .btngrp button:focus {
-  background-color: var(--haze);
-  color: var(--ebony);
+  background-color: var(--purple);
+  color: white;
 }
 
 .btngrp button:first-child {
@@ -119,4 +117,27 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  max-width: 800px;
+  margin-block: 1rem;
+  min-height: calc(100vh - 2rem);
+  background-color: var(--ebony);
+  border-radius: 20px;
+  box-shadow: 4px 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 800px) {
+  .inputgrp {
+    width: 80vw;
+  }
+  .wrapper {
+    width: 100vw;
+    border-radius: 0;
+  }
 }

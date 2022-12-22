@@ -7,29 +7,29 @@
     <title>QR Coder</title>
   </head>
   <body>
-    <h1>QR Coder</h1>
-    <span class="inputgrp">
-      <label for="url">Enter a URL</label>
-      <input type="text" name="url" />
-    </span>
-    <span class="selectgrp">
-      <label for="url">Select a size</label>
-      <select name="size">
-        <option value="100">100x100</option>
-        <option value="200">200x200</option>
-        <option value="300">300x300</option>
-        <option value="400">400x400</option>
-        <option value="500">500x500</option>
-        <option value="600">600x600</option>
-      </select>
-    </span>
-    <button id="generate" type="button">Generate</button>
-    <span class="btngrp">
-      <button type="button" id="copy">Copy</button>
-      <button type="button" id="save">Download</button>
-    </span>
+    <div class="wrapper">
+      <h1>QR Coder</h1>
+      <span class="inputgrp">
+        <label for="url">Enter a URL</label>
+        <input type="text" name="url" />
+        <label for="url">Select a size</label>
+        <select name="size">
+          <option value="100">100x100</option>
+          <option value="200">200x200</option>
+          <option value="300">300x300</option>
+          <option value="400">400x400</option>
+          <option value="500">500x500</option>
+          <option value="600">600x600</option>
+        </select>
+      </span>
+      <button id="generate" type="button">Generate</button>
+      <span class="btngrp">
+        <button type="button" id="copy">Copy</button>
+        <button type="button" id="save">Download</button>
+      </span>
 
-    <div id="code"></div>
+      <div id="code"></div>
+    </div>
 
     <the-loader class="hidden"></the-loader>
     <script
